@@ -1,0 +1,32 @@
+{
+  "name": "tokenring-ts",
+  "version": "0.1.0",
+  "description": "Token-bucket + leaky-bucket rate limiters with FIFO async consume and injectable clock.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "keywords": ["rate-limit", "token-bucket", "leaky-bucket", "throttle"],
+  "author": "nripankadas07",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nripankadas07/tokenring-ts.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test --import tsx test/",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}
